@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix"
+    },
+    "devDependencies": {
+        "axios": "^1.1",
+        "laravel-mix": "^6.0.49",
+        "laravel-vite-plugin": "^0.6.1",
+        "lodash": "^4.17.21",
+        "postcss": "^8.4.18",
+        "vite": "^3.1.8",
+        "vue-loader": "^17.0.0",
+        "vue-template-compiler": "^2.7.13"
+    },
+    "dependencies": {
+        "mdbootstrap": "^4.20.0"
+    }
+}

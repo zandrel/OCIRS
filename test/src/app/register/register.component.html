@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResQMe-Registration</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="logo">
+        <img src="images/logo.png" alt="">
+        <h1>Rescue Alert Emergency System</h1>
+    </div>
+
+</header>
+
+<section>
+    <div class="left">
+        <div class="left-container">
+            <div class="image">
+      
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="right">
+        <div class="right-container">
+            <form>
+                <div class="basic-info">
+                    <h1>Basic Information</h1>
+                    <div class="input">
+                        <div class="form-floating mb-2">
+                            <div class="row">
+                                <div class="form-floating col">
+                                  <input type="text" class="form-control" placeholder="." id="floatingInput" style="width: 104%;">
+                                  <label for="floatingInput" style="left: 7px;">First Name</label>
+                                </div>
+                                <div class="form-floating col">
+                                  <input type="text" class="form-control" placeholder="." id="floatingInput">
+                                  <label for="floatingInput" style="left: 7px;">Middle Name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" id="floatingInput" placeholder=".">
+                            <label for="floatingInput">Last Name</label>
+                        </div>
+
+                        <select class="form-select mb-2" aria-label="Default select example">
+                            <option selected>-- Select your Gender --</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <div class="form-floating mb-2">
+                            <input type="date" class="form-control" id="floatingInput" placeholder=".">
+                            <label for="floatingInput">Date of Birth</label>
+                        </div>
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" id="floatingInput" placeholder=".">
+                            <label for="floatingInput">Place of Birth</label>
+                        </div>
+                        <select class="form-select mb-2" aria-label="Default select example">
+                            <option selected>-- Select your Civil Status --</option>
+                            <option value="male">Single</option>
+                            <option value="female">Married</option>
+                            <option value="female">Divorced</option>
+                            <option value="female">Widower</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="address">
+                    <h1>Address</h1>
+                    <div class="input">
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" id="floatingInput" placeholder=".">
+                            <label for="floatingInput">Street (House#, Slot Number, Block)</label>
+                        </div>
+                        
+                        <select  class="form-select mb-2" aria-label="Default select example" id="region">
+                            <option selected>-- Select your Region --</option>
+                           
+                        </select>
+                        <select class="form-select mb-2" aria-label="Default select example"  id="province">
+                        <option selected>-- Select your Province --</option>
+                           
+                        </select>
+                        <select class="form-select mb-2" aria-label="Default select example" id="city">
+                            <option selected>-- Select your City/Municipality --</option>
+                            
+                        </select>
+                        <select class="form-select mb-2" aria-label="Default select example" id="barangay" >
+                            <option selected>-- Select your Barangay --</option>
+                           
+                        </select>
+                    </div>
+                </div>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+        <!-- script type="text/javascript" src="../../jquery.ph-locations.js"></script -->
+        <script type="text/javascript" src="https://f001.backblazeb2.com/file/buonzz-assets/jquery.ph-locations.js"></script>
+        <script type="text/javascript">
+            
+           
+        </script>
+                <div class="account">
+                    <h1>Account</h1>
+                    <div class="input">
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Username">
+                            <label for="floatingInput">Username</label>
+                        </div>
+                        <div class="form-floating mb-2">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating mb-2">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Re-enter password</label>
+                        </div>
+                        <div class="form-floating mb-2">
+                            <input type="email" class="form-control" id="floatingPassword" placeholder="Email">
+                            <label for="floatingPassword">Email Address</label>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span id="basic-addon1">+63</span>
+                            <input type="text" class="form-control" placeholder="Mobile Number" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="buttonIn">Register</button> 
+                <div class="space"></div>
+
+            </form>
+
+     
+      
+        </div>
+    </div>
+</section>
+</body>
+</html>

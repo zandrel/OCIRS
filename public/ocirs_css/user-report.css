@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap');
+
+*{
+ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins' , sans-serif;
+}
+
+body{
+      height: 100vh;
+      background: #e1edf9;
+}
+
+.wrapper{
+  max-width: 700px;
+  width: 100%;
+  margin: 0px auto 0;
+  padding: 10px;
+
+}
+
+.wrapper .form_container{
+  background: #fff;
+  padding: 30px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+.heading{
+  margin: -20px;
+  font-size: 11px;
+  text-align: center;
+  color: #04215f;
+  margin-bottom:7px;
+  padding: 5px;
+  
+  
+}
+.wrapper .form_container .form_item{
+  margin-bottom: 25px;
+}
+
+.form_wrap.fullname,
+.form_wrap.select_box{
+  margin-top: 10px;
+  display: flex;
+  margin: auto;
+  text-align: center;
+
+}
+
+.form_wrap.fullname .form_item,
+.form_wrap.select_box .form_item{
+  width: 50%;
+}
+
+
+.form_wrap.select_box .form_item:first-child { 
+  margin-left: 1%;
+}
+
+.form_wrap.select_box label {
+  margin-right: 1%;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+
+.wrapper .form_container .form_item label{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.form_item input[type="text"],
+.form_item textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+
+}
+.form_item input[type="date"]{
+  width: 80%;
+  padding: 11px;
+  font-size: 12px;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+}
+.form_item input[type="time"]{
+  width: 80%;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+}
+.form_item input[type="text"]:focus{
+  border-color: #6271f0;
+}
+.upload input{
+  width: 100%;
+  padding: 2px;
+  font-size: 12px;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+}
+span {
+  color: #ff0000
+}
+.form_item select {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+}
+
+.form_item2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+
+img {
+  margin-top: 20px;
+  width: 100%
+
+}
+
+
+.myButton {
+
+  background-color:#fff;
+  border-radius:5px;
+  border:1px solid #04215f;
+  display:inline-block;
+  cursor: pointer;
+  color: #04215f;
+  font-family: 'Poppins' , sans-serif;
+  font-size:13px;
+  padding:8px 15px;
+  text-decoration:none;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin-right: 5px;
+}
+.myButton:hover {
+  background-color:#85c8ff;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.myButton2 {
+  display: inline;
+  background-color:#b30000;
+  border-radius:5px;
+  border:1px solid #000000;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family: 'Poppins' , sans-serif;
+  font-size:13px;
+  padding:8px 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+.myButton2:hover {
+  background-color:#ff0000;
+}
+.myButton2:active {
+  position:relative;
+  top:1px;
+}
+
+#outer
+{
+    width:100%;
+    text-align: right;
+}
+.inner
+{
+    display: inline-block;
+}
+
+.onoffswitch {
+    margin: 0 auto;
+    text-align: center;
+    position: relative; width: 50px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 25px; padding: 0; line-height: 25px;
+    border: 2px solid #E3E3E3; border-radius: 25px;
+    background-color: #9A9A9C;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 25px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 23px;
+    border: 2px solid #E3E3E3; border-radius: 25px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #04215F;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #04215F;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
+
+.upload {
+text-align: center;
+margin-bottom: 20px;
+
+}
+.mb-3{
+  margin-left: 175px;
+  margin-right: 175px;
+  padding: 1px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+.form_item iframe{
+  padding-top: 30px;
+  width:100%;
+  height:220px;
+}
+#report_id{
+  display: none;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}

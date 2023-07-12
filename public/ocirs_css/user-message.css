@@ -1,0 +1,364 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 240px;
+    background: #0D2048;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active {
+    width: 60px;
+}
+
+.sidebar .logo-details {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logo-details i {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    min-width: 60px;
+    text-align: center
+}
+
+.sidebar .logo-details .logo_name {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.sidebar .logo-details img {
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    padding-left: 11px;
+}
+
+.sidebar .nav-links {
+    margin-top: 10px;
+}
+
+.sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    height: 50px;
+}
+
+.sidebar .nav-links li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li a.active {
+    background: #9f1010 ;
+
+}
+
+
+.sidebar .nav-links li a:hover {
+    background: #9f1010 ;
+}
+
+.sidebar .nav-links li i {
+    min-width: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.sidebar .nav-links li a .links_name {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.sidebar .nav-links .log_out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.home-section {
+    position: relative;
+    background: #f4f4f4;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active~.home-section {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.home-section nav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 240px);
+    left: 240px;
+    z-index: 100;
+    padding: 0 20px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active~.home-section nav {
+    left: 60px;
+    width: calc(100% - 60px);
+}
+
+.home-section nav .sidebar-button {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav .sidebar-button i {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.home-section nav .profile-details {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    height: 50px;
+    padding: 0 15px 0 2px;
+}
+
+nav .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+nav .profile-details .user_name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+nav .profile-details i {
+    font-size: 25px;
+    color: #333;
+}
+/*-------------------Message-----------------------------------*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background: #e6d7d7;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: center;
+    height: 100vh;
+  }
+main{
+    padding-top:70px;
+}
+.conversation{
+    display: flex;
+    position: relative;
+    width: 170vh;
+    margin-left: 20px;
+    max-width: 100%;
+    height: calc(100vh - 100px);
+    background:#fff;
+    box-shadow: 0 1px 1px 0 rgb(0,0,0,0.06), 0 2px 5px 0 rgb(0,0,0,0.06) ;
+    border: 1px solid black;
+}
+.conversation .rightSide{
+    position: relative;
+    flex: 70%;
+    background: #e5ddd5;
+
+}
+.conversation .rightSide::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*rightside Header*/
+.headertan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #ededed;
+    padding: 0 15px;
+}
+/*adminimg*/
+.userimg{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*nav-icons*/
+.nav_icons{
+    display: flex;
+}
+.nav_icons{
+    background:#050c49;
+    border: 1px solid #050c49 ;
+    border-radius: 50px;
+    display: flex;
+    cursor: pointer;
+    color:rgb(226, 222, 222);
+    font-size: 1em;
+    margin-left: 5px;
+}
+.nav_icons h5{
+ font-weight: lighter;
+} 
+/*imgText*/
+.imgtext{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgtext h4{
+font-weight: 500;
+line-height: 1.2em;
+margin-left: 15px;
+}
+.imgtext h4 span{
+ font-size:0.8em;
+ color:rgb(58, 65, 58);
+}
+/*chatBox*/
+.chatbox{
+    position:relative;
+    width: 100%;
+    margin-top: 10px;
+    height: calc(100% - 150px);
+    padding: 50px;
+    overflow-y: auto;
+}
+/*message box*/
+.message{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 5px 0;
+}
+.message p{
+    position: relative;
+    right: 0;
+    text-align: right;
+    font-size: 0.9em;
+    max-width: 65%;
+    padding: 12px;
+    background: #7977f0;
+    border-radius: 10px;
+}
+.message p::before{
+content: '';
+position: absolute;
+top:0;
+right: -12px;
+width: 20px;
+height: 20px;
+background:linear-gradient(135deg,#7977f0 0%,#7977f0 50%, transparent 50%, transparent );
+}
+.message p span{
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85em;
+    opacity: 0.5;
+}
+.user_message{
+    justify-content: flex-end;
+}
+.admin_message{
+    justify-content: flex-start;
+}
+.admin_message p span{
+    background: #7977f0;
+    text-align: left;
+}
+.message.admin_message p::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background:linear-gradient(255deg,#7977f0 0%,#7977f0 50%, transparent 50%, transparent );
+}
+/*chatbox_input*/
+.chatbox_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    background:#f0f0f0;
+}
+.chatbox_input ion-icon{
+    cursor:pointer;
+    font-size: 1.8em;
+    color:#0a29b3;
+}
+.chatbox_input ion-icon:nth-child(1){
+margin: 15px;
+}
+.chatbox_input input{
+    position: relative;
+    border-radius: 30px;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    width: 90%;
+    margin:10px 5px;
+    padding: 10px 20px;
+}

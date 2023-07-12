@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --black:#272D3B;
+  --red:#FF724C;
+  --coral:#F7817F;
+  --gradient:linear-gradient(90deg, var(--red), var(--coral));
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border:none;
+  transition: all .03s;
+}
+
+*::selection{
+  background:var(--red);
+  color:#fff;
+}
+
+html{
+  font-size: 65.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+
+.btn{
+  display: inline-block;
+  padding:.7rem 3rem;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background:var(--gradient);
+  color:#fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+.heading{
+  text-align: center;
+  color:transparent;
+  background:var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 5rem;
+  text-transform: uppercase;
+  padding:1rem;
+}
+
+header{
+  position: fixed;
+  top:0; left: 0; right:0;
+  background: transparent;
+  z-index: 1000;
+  padding:2rem 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+header .logo img{
+    position: fixed;
+
+    height: 60px;
+    justify-content: right;
+}
+
+header .logo h1{
+
+
+  position: fixed;
+  height: 60px;
+  left: 9%;
+  font-size: 15px;
+  color: #8A8A8A;
+  top: 40px;
+}
+
+
+/*Left container*/
+
+.left .left-container {
+    position: fixed;
+    width: 784px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+  
+    background: #2A2C41;
+      
+  }
+
+  .left .left-container .image {
+    position: absolute;
+    width: 354px;
+    height: 448px;
+    left: 124px;
+    top: 160px;
+  }
+
+  .left .left-container .image img {
+    height: 550px;
+  }
+
+  /* End */
+
+  /* Right container */
+
+
+.right-container {
+    position: absolute;
+    width: 551px;
+    height: 800px;
+    left: 875px;
+    top: 90px;
+
+    background: #F4F4F4;
+    box-shadow: 6px 7px 11px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+
+}
+
+.right .right-container .basic-info h1 {
+    position: absolute;
+    left: 5%;
+    top: 3%;
+
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+
+    color: #FF724C;
+}
+
+.right .right-container .address {
+    position: absolute;
+    top: 39.5%;
+    
+
+
+}
+
+.right .right-container .address h1 {
+    position: relative;
+    left: 26%;
+
+
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+
+    color: #FF724C;
+}
+
+.right .right-container .account {
+    position: absolute;
+    top: 66%;
+
+}
+
+.right .right-container .account h1 {
+    position: relative;
+    left: 26%;
+
+
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+
+    color: #FF724C;
+}
+
+/* input class */
+
+
+.right .right-container .basic-info .input {
+    left: 33px;
+
+    position: absolute;
+    width: 510px;
+    height: 37px;
+    top: 70.5px;
+    
+}
+
+.right .right-container .basic-info .form-floating {
+    width: 95%;
+}
+
+.right .right-container .address .input {
+    left: 33px;
+
+    position: absolute;
+    width: 510px;
+    height: 37px;
+    top: 40.5px;
+    
+}
+
+.right .right-container .address .form-floating {
+    width: 95%;
+}
+
+.right .right-container .address .form-select {
+     width: 95%;
+}
+
+.right .right-container .account .input {
+     left: 33px;
+
+    position: absolute;
+    width: 510px;
+    height: 37px;
+    top: 40.5px;
+    
+}
+
+.right .right-container .account .form-floating {
+    width: 95%;
+}
+
+
+
+.right .right-container .buttonIn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 103%;
+
+    height: 5%;
+
+    background-color: #2A2C41;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.right .right-container .space {
+    padding-top: 950px;
+}
+
+.right .right-container .basic-info .input .form-select {
+    width: 95%;
+}
+.right .right-container .address .input .form-select {
+    width: 95%;
+}
+.right .right-container .account .input .form-select {
+    width: 95%;
+}
+
+.right .right-container .account .input .input-group {
+    width: 95%;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+    header .logo img{
+        position: fixed;
+    
+        height: 40px;
+        justify-content: right;
+    }
+
+    header .logo h1 {
+
+        padding-left: 30px;
+        top: 30px;
+      }
+
+      .left .left-container {
+        position: fixed;
+        height: 70px;
+        width: 100%;
+        z-index: 2;
+      }
+
+      .right-container {
+        position: absolute;
+        width: 450px;
+        height: 800px;
+        left: 25px;
+        top: 90px;
+    
+        background: #F4F4F4;
+        box-shadow: 6px 7px 11px -1px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    
+    }
+    .right .right-container .basic-info .form-floating {
+        width: 75%;
+    }
+    .right .right-container .address .form-floating {
+        width: 75%;
+    }
+
+    .right .right-container .account .form-floating {
+        width: 75%;
+    }
+
+    .right .right-container .basic-info .input .form-select {
+        width: 75%;
+    }
+    .right .right-container .address .input .form-select {
+        width: 75%;
+    }
+    .right .right-container .account .input .form-select {
+        width: 75%;
+    }
+
+    .right .right-container .account .input .input-group {
+        width: 75%;
+    }
+    
+
+
+}
